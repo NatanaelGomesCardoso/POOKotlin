@@ -1,13 +1,17 @@
 package natan.devteste.digionebank
 
-class Pessoa(nome:String , cpf:String) {
-    var nomep : String = nome
-    var cpfp : String = cpf
-    private set
+// cria a classe Pessoa
+class Pessoa {
+    var nome : String = "Natan"  // objeto nome da Pessoa
+    var cpf : String = "235.456.789-45" // objeto cpf da Pessoa
+    private set // torna o set privado
+
+    constructor() // chama o construdor secundário
+
+    fun pessoainf() = "$nome e $cpf" // função single-line que retorna o nome e cpf da Pessoa
 }
 
 fun main(){
-    val natan = Pessoa("Natan" ,"072.5698.123-55")
-    println(natan.nomep)
-    println(natan.cpfp)
+    val natan = Pessoa() // cria a Pessoa natan
+    println(natan.pessoainf()) // printa as informações da Pessoa natan
 }
