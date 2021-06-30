@@ -3,6 +3,7 @@ package natan.devteste.digionebank
 class Pessoa(nome:String , cpf:String) {
     var nomep : String = nome
     var cpfp : String = cpf
+    private set
 }
 
 fun main(){
