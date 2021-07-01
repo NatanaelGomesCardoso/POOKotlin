@@ -11,7 +11,3 @@ class Pessoa {
     fun pessoainf() = "$nome e $cpf" // função single-line que retorna o nome e cpf da Pessoa
 }
 
-fun main(){
-    val natan = Pessoa() // cria a Pessoa natan
-    println(natan.pessoainf()) // printa as informações da Pessoa natan
-}
