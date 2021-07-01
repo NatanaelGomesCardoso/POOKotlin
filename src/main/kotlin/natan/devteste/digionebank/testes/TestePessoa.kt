@@ -2,9 +2,7 @@ package natan.devteste.digionebank.testes
 
 import natan.devteste.digionebank.Pessoa
 
-class TestePessoa {
-    fun main(){
-        val natan = Pessoa() // cria a Pessoa natan
-        println(natan.pessoainf()) // printa as informações da Pessoa natan
-    }
+fun main(){
+    val natan = Pessoa("Natanael","123.456.899-45") // cria a Pessoa natan
+    println("${natan.nome} - ${natan.cpf}") // printa as informações da Pessoa nata
 }
