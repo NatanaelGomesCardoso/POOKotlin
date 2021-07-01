@@ -4,10 +4,10 @@ import java.math.BigDecimal
 
 // cria a classe Funcionario
 abstract class Funcionario(
-    nome: String, // cria o objeto aberto natan
-    cpf: String,  // cria o objeto aberto cpf
-    val salario: Double    // cria o obejto salario
-): Pessoa(nome, cpf) {         // construtor primario da classe Pessoa
+    nome: String,
+    cpf: String,
+    val salario: Double
+): Pessoa(nome, cpf) {
     protected abstract fun calculoAuxilio(): Double
 
     // sobrescreve a função toString
